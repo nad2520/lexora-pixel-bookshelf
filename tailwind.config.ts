@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        pixel: ['"Press Start 2P"', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +50,29 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        parchment: {
+          DEFAULT: "hsl(var(--parchment))",
+          dark: "hsl(var(--parchment-dark))",
+        },
+        forest: {
+          DEFAULT: "hsl(var(--forest))",
+          light: "hsl(var(--forest-light))",
+        },
+        mystery: {
+          DEFAULT: "hsl(var(--mystery))",
+          light: "hsl(var(--mystery-light))",
+        },
+        romance: {
+          DEFAULT: "hsl(var(--romance))",
+          light: "hsl(var(--romance-light))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+        },
+        "xp-bar": "hsl(var(--xp-bar))",
+        "hp-bar": "hsl(var(--hp-bar))",
+        "hp-bar-fill": "hsl(var(--hp-bar-fill))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +91,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
