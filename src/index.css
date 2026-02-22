@@ -6,173 +6,320 @@
 
 @layer base {
   :root {
-    --background: 36 33% 88%;
-    --foreground: 30 20% 15%;
+    /* 16-Bit Cinematic Palette */
+    --background: 240 25% 6%;
+    --foreground: 45 30% 90%;
 
-    --card: 38 40% 82%;
-    --card-foreground: 30 20% 15%;
+    --card: 240 15% 12%;
+    --card-foreground: 45 20% 85%;
 
-    --popover: 36 33% 88%;
-    --popover-foreground: 30 20% 15%;
+    --popover: 240 25% 8%;
+    --popover-foreground: 45 20% 90%;
 
-    --primary: 30 60% 35%;
-    --primary-foreground: 40 50% 95%;
+    --primary: 340 70% 55%;
+    --primary-foreground: 340 20% 98%;
 
-    --secondary: 140 30% 30%;
-    --secondary-foreground: 80 40% 95%;
+    --secondary: 160 60% 45%;
+    --secondary-foreground: 160 20% 98%;
 
-    --muted: 35 25% 78%;
-    --muted-foreground: 30 15% 40%;
+    --muted: 240 10% 20%;
+    --muted-foreground: 240 10% 60%;
 
-    --accent: 45 80% 55%;
-    --accent-foreground: 30 30% 12%;
+    --accent: 45 90% 50%;
+    --accent-foreground: 240 25% 10%;
 
-    --destructive: 0 65% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 30% 60%;
-    --input: 30 30% 70%;
-    --ring: 45 80% 55%;
+    --border: 240 15% 20%;
+    --input: 240 15% 25%;
+    --ring: 340 70% 55%;
 
-    --radius: 0.25rem;
+    --radius: 0px;
 
-    /* Custom RPG tokens */
-    --parchment: 38 45% 90%;
-    --parchment-dark: 35 35% 75%;
-    --forest: 140 40% 28%;
-    --forest-light: 130 35% 45%;
-    --mystery: 240 30% 18%;
-    --mystery-light: 230 25% 35%;
-    --romance: 340 50% 70%;
-    --romance-light: 340 60% 85%;
-    --gold: 45 85% 50%;
-    --gold-light: 48 80% 65%;
-    --xp-bar: 200 70% 50%;
-    --hp-bar: 0 70% 50%;
-    --hp-bar-fill: 120 60% 40%;
-    --pixel-shadow: 30 25% 25%;
+    /* Zone Tokens */
+    --parchment: 35 30% 15%;
+    --parchment-dark: 35 30% 8%;
+    --parchment-light: 40 40% 25%;
 
-    --sidebar-background: 36 33% 85%;
-    --sidebar-foreground: 30 20% 15%;
-    --sidebar-primary: 30 60% 35%;
-    --sidebar-primary-foreground: 40 50% 95%;
-    --sidebar-accent: 45 80% 55%;
-    --sidebar-accent-foreground: 30 30% 12%;
-    --sidebar-border: 30 30% 60%;
-    --sidebar-ring: 45 80% 55%;
+    --forest: 145 50% 15%;
+    --mystery: 260 50% 15%;
+    --romance: 345 50% 20%;
+    --gold: 45 90% 50%;
+
+    --xp-bar: 200 80% 50%;
+    --hp-bar-fill: 0 80% 50%;
+
+    --pixel-shadow: 0 0% 0%;
+    --star-color: rgba(255, 255, 255, 0.3);
+    --scanline-opacity: 0.4;
+    --vignette-opacity: 0.8;
+    --noise-opacity: 0.05;
+
+    /* Semantic Tokens */
+    --glass-bg: rgba(20, 20, 30, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --button-bg: #444;
+    --button-border: #000;
+    --button-shadow: #222;
+    --hud-bg: rgba(0, 0, 0, 0.8);
+    --hud-border: #000;
+    --sub-panel-bg: rgba(0, 0, 0, 0.4);
   }
 
-  .dark {
-    --background: 30 15% 10%;
-    --foreground: 36 33% 88%;
-    --card: 30 15% 14%;
-    --card-foreground: 36 33% 88%;
-    --popover: 30 15% 14%;
-    --popover-foreground: 36 33% 88%;
-    --primary: 45 80% 55%;
-    --primary-foreground: 30 15% 10%;
-    --secondary: 140 30% 25%;
-    --secondary-foreground: 80 40% 90%;
-    --muted: 30 10% 20%;
-    --muted-foreground: 36 20% 60%;
-    --accent: 45 80% 55%;
-    --accent-foreground: 30 15% 10%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 30 15% 25%;
-    --input: 30 15% 25%;
-    --ring: 45 80% 55%;
-    --sidebar-background: 30 15% 12%;
-    --sidebar-foreground: 36 33% 88%;
-    --sidebar-primary: 45 80% 55%;
-    --sidebar-primary-foreground: 30 15% 10%;
-    --sidebar-accent: 30 10% 20%;
-    --sidebar-accent-foreground: 36 33% 88%;
-    --sidebar-border: 30 15% 25%;
-    --sidebar-ring: 45 80% 55%;
+  .light {
+    /* Solarized Sanctuary Premium (Eye-Care) */
+    --background: 45 40% 96%;
+    /* Base3: Premium Paper */
+    --foreground: 192 10% 25%;
+    /* Base01: Soft Charcoal */
+
+    --card: 45 35% 92%;
+    /* Base2: Inset Parchment */
+    --card-foreground: 192 10% 20%;
+
+    --popover: 45 40% 98%;
+    --popover-foreground: 192 10% 20%;
+
+    --primary: 340 50% 45%;
+    /* Sanctuary Ruby */
+    --primary-foreground: 45 40% 98%;
+
+    --secondary: 165 25% 35%;
+    /* Scholarly Green */
+    --secondary-foreground: 45 40% 98%;
+
+    --muted: 45 20% 88%;
+    --muted-foreground: 192 10% 45%;
+
+    --accent: 42 80% 35%;
+    /* Mastery Amber */
+    --accent-foreground: 45 40% 98%;
+
+    --border: 45 20% 80%;
+    --input: 45 20% 85%;
+    --ring: 340 50% 50%;
+
+    /* Zone Tokens: Sanctuary Variant */
+    --parchment: 45 30% 90%;
+    --parchment-dark: 45 30% 85%;
+    --parchment-light: 45 35% 98%;
+
+    --forest: 145 20% 85%;
+    --mystery: 260 20% 85%;
+    --romance: 345 25% 90%;
+    --gold: 42 100% 35%;
+    /* Rich Coins */
+
+    --xp-bar: 165 25% 45%;
+    --hp-bar-fill: 340 50% 50%;
+
+    --pixel-shadow: 45 15% 35%;
+    /* Soft Sepia Shadows */
+    --star-color: rgba(60, 50, 40, 0.1);
+    --scanline-opacity: 0.08;
+    /* Softer for eyes */
+    --vignette-opacity: 0.15;
+    --noise-opacity: 0.03;
+    /* Paper grain effect */
+
+    /* Semantic Tokens: Sanctuary Light (Premium Warmth) */
+    --glass-bg: rgba(253, 246, 227, 0.75);
+    --glass-border: rgba(181, 137, 0, 0.15);
+    --button-bg: #eee8d5;
+    --button-border: #b58900;
+    --button-shadow: #859900;
+    /* Scholarly Green shadow */
+    --hud-bg: rgba(253, 246, 227, 0.98);
+    --hud-border: #b58900;
+    --sub-panel-bg: rgba(181, 137, 0, 0.04);
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Press Start 2P', cursive;
+    image-rendering: pixelated;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
   }
 
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Press Start 2P', monospace;
-    image-rendering: pixelated;
+  /* Starry Background */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+      radial-gradient(1px 1px at 20px 30px, var(--star-color), transparent),
+      radial-gradient(1px 1px at 40px 70px, var(--star-color), transparent),
+      radial-gradient(2px 2px at 50px 160px, var(--star-color), transparent),
+      radial-gradient(2px 2px at 90px 40px, var(--star-color), transparent),
+      radial-gradient(1px 1px at 130px 80px, var(--star-color), transparent),
+      radial-gradient(1px 1px at 160px 120px, var(--star-color), transparent);
+    background-size: 200px 200px;
+    animation: stars-drift 100s linear infinite;
+  }
+
+  /* CRT Scanlines & Vignette */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    background:
+      linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%),
+      linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+    background-size: 100% 4px, 3px 100%;
+    box-shadow: inset 0 0 15vw rgba(0, 0, 0, var(--vignette-opacity));
+    opacity: var(--scanline-opacity);
+  }
+
+  ::selection {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
   }
 }
 
 @layer utilities {
-  .pixel-border {
-    border: 3px solid hsl(var(--border));
+  .crt-flicker {
+    animation: flicker 0.15s infinite;
+  }
+
+  .pixel-border-2 {
+    border: 4px solid hsl(var(--pixel-shadow));
     box-shadow:
-      inset -2px -2px 0 0 hsl(var(--pixel-shadow) / 0.3),
-      inset 2px 2px 0 0 hsl(var(--parchment)),
-      4px 4px 0 0 hsl(var(--pixel-shadow) / 0.4);
+      inset -4px -4px 0 0 rgba(0, 0, 0, 0.4),
+      4px 4px 0 0 rgba(0, 0, 0, 0.5);
   }
 
   .pixel-border-gold {
-    border: 3px solid hsl(var(--gold));
+    border: 4px solid hsl(var(--gold));
     box-shadow:
-      inset -2px -2px 0 0 hsl(var(--gold) / 0.4),
-      inset 2px 2px 0 0 hsl(var(--gold-light)),
-      4px 4px 0 0 hsl(var(--pixel-shadow) / 0.4);
+      inset -4px -4px 0 0 rgba(255, 215, 0, 0.3),
+      4px 4px 0 0 rgba(0, 0, 0, 0.6);
   }
 
-  .pixel-text-shadow {
-    text-shadow: 2px 2px 0 hsl(var(--pixel-shadow) / 0.5);
+  .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border: 3px solid var(--glass-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .parchment-bg {
-    background: linear-gradient(
-      135deg,
-      hsl(var(--parchment)) 0%,
-      hsl(var(--parchment-dark)) 50%,
-      hsl(var(--parchment)) 100%
-    );
+  .glass-panel:hover {
+    border-color: hsl(var(--primary) / 0.3);
+    box-shadow: 0 0 20px -5px hsl(var(--primary) / 0.1);
   }
 
-  .rpg-panel {
-    background: hsl(var(--card));
-    border: 3px solid hsl(var(--border));
-    box-shadow:
-      inset -2px -2px 0 0 hsl(var(--pixel-shadow) / 0.2),
-      inset 2px 2px 0 0 hsl(var(--parchment)),
-      3px 3px 0 0 hsl(var(--pixel-shadow) / 0.3);
+  /* Advanced Game Button */
+  .rpg-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    background: var(--button-bg);
+    border: 4px solid var(--button-border);
+    box-shadow: inset -4px -4px 0 0 var(--button-shadow), 4px 4px 0 0 var(--button-border);
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    color: hsl(var(--foreground));
+    user-select: none;
   }
 
-  .font-pixel {
-    font-family: 'Press Start 2P', monospace;
+  .rpg-button:hover {
+    transform: translate(-2px, -2px);
+    background: hsl(var(--primary) / 0.1);
+    box-shadow: inset -4px -4px 0 0 var(--button-shadow), 6px 6px 0 0 var(--button-border);
+  }
+
+  .rpg-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: inset -2px -2px 0 0 var(--button-shadow), 2px 2px 0 0 var(--button-border);
+  }
+
+  .rpg-button.primary {
+    background: hsl(var(--primary));
+    box-shadow: inset -4px -4px 0 0 rgba(0, 0, 0, 0.3), 4px 4px 0 0 var(--button-border);
+    color: hsl(var(--primary-foreground));
+  }
+
+  .rpg-button.primary:hover {
+    background: hsl(var(--primary) / 0.9);
+    filter: brightness(1.1);
+  }
+
+  .hud-stats {
+    background: var(--hud-bg);
+    border-bottom: 4px solid var(--hud-border);
+    height: 48px;
   }
 }
 
-/* Pixel-art keyframes */
+/* Animations */
+@keyframes flicker {
+  0% {
+    opacity: 0.97;
+  }
+
+  5% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  15% {
+    opacity: 0.95;
+  }
+
+  20% {
+    opacity: 0.98;
+  }
+
+  25% {
+    opacity: 0.95;
+  }
+
+  30% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0.98;
+  }
+}
+
+@keyframes stars-drift {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1000px 1000px;
+  }
+}
+
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
 
-@keyframes glow-pulse {
-  0%, 100% { opacity: 0.7; }
-  50% { opacity: 1; }
-}
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .animate-float {
-  animation: float 2s ease-in-out infinite;
-}
-
-.animate-glow {
-  animation: glow-pulse 1.5s ease-in-out infinite;
-}
-
-.animate-blink {
-  animation: blink 1s step-end infinite;
+  animation: float 3s ease-in-out infinite;
 }
